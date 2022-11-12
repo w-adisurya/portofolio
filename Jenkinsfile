@@ -17,7 +17,7 @@ pipeline {
 
         stage('Front End Unit Tests') {
           steps {
-            sh 'cd portofolio && node server.js'
+            sh 'node server.js'
           }
         }
 
