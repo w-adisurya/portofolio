@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Log check dir') {
+      steps {
+        sh 'ls -la'
+      }
+    }
+
   }
 }
