@@ -1,21 +1,21 @@
 pipeline {
   agent any
   stages {
-    stage('Checkout code') {
+    stage('Checkout code from Git') {
       steps {
         git(url: 'https://github.com/w-adisurya/portofolio', branch: 'main')
       }
     }
 
-    stage('Log check dir') {
+    stage('Check process') {
       parallel {
-        stage('Log check dir') {
+        stage('List current dir') {
           steps {
             sh 'ls -la'
           }
         }
 
-        stage('Front End Unit Tests') {
+        stage('Check script validity') {
           steps {
             sh 'node --check server.js'
           }
