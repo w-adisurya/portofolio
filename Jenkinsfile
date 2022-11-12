@@ -8,8 +8,19 @@ pipeline {
     }
 
     stage('Log check dir') {
-      steps {
-        sh 'ls -la'
+      parallel {
+        stage('Log check dir') {
+          steps {
+            sh 'ls -la'
+          }
+        }
+
+        stage('Front End Unit Tests') {
+          steps {
+            sh 'cd portofolio && node server.js'
+          }
+        }
+
       }
     }
 
