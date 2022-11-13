@@ -26,7 +26,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'docker build -f docker-app/Dockerfile . -t node-web-app'
+        sh 'docker build -f docker-app/Dockerfile . -t wadisurya/portofolio:latest'
       }
     }
 
