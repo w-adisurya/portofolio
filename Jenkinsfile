@@ -26,9 +26,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh '''
-
-sudo cd docker-app && docker build . -t node-web-app'''
+        sh 'cd docker-app && docker build . -t node-web-app'
       }
     }
 
