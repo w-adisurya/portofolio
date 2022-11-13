@@ -42,7 +42,7 @@ pipeline {
 
     stage('Docker push') {
       steps {
-        sh 'docker push wadisurya/portofolio/node-app'
+        sh 'docker push wadisurya/portofolio/'
       }
     }
 
