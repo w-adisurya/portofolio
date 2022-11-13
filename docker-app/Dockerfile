@@ -1,6 +1,6 @@
 FROM node:16
 # Create app directory
-WORKDIR /www/dockerizing-app/app
+WORKDIR /docker-app/app
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 # where available (npm@5+)
