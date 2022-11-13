@@ -28,7 +28,7 @@ pipeline {
       steps {
         sh '''
 
-cd docker-app && docker build . -t node-web-app'''
+sudo cd docker-app && docker build . -t node-web-app'''
       }
     }
 
