@@ -26,7 +26,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'docker build -f docker-app/Dockerbuild .'
+        sh 'docker build -f docker-app/Dockerfile .'
       }
     }
 
