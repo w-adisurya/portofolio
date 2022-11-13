@@ -28,7 +28,7 @@ pipeline {
       steps {
         sh '''
 
-cd dockerizing-app && docker build . -t node-web-app'''
+cd docker-app && docker build . -t node-web-app'''
       }
     }
 
