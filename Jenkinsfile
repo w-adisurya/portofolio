@@ -11,7 +11,7 @@ pipeline {
       parallel {
         stage('List current dir') {
           steps {
-            sh 'ls -la'
+            sh 'ls -la && whoami'
           }
         }
 
