@@ -40,5 +40,11 @@ pipeline {
       }
     }
 
+    stage('Docker push') {
+      steps {
+        sh 'docker push wadisurya/portofolio:latest'
+      }
+    }
+
   }
 }
