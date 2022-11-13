@@ -26,7 +26,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'docker build . -t node-web-app'
+        sh 'docker build -f docker-app/Dockerbuild .'
       }
     }
 
