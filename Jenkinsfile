@@ -26,7 +26,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'docker build -f docker-app/Dockerfile . -t wadisurya/portofolio/node-app:v2'
+        sh 'docker build -f docker-app/Dockerfile . -t wadisurya/portofolio/node-app'
       }
     }
 
@@ -42,7 +42,7 @@ pipeline {
 
     stage('Docker push') {
       steps {
-        sh 'docker push wadisurya/portofolio'
+        sh 'docker push wadisurya/portofolio/node-app:v2'
       }
     }
 
